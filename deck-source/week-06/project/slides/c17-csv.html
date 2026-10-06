@@ -1,0 +1,25 @@
+<section id="c17-csv" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 17 · CSV</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">CSV files: tables that Excel can open</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Writing</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">import</span> csv<br>rows = [[<span style="color:#9FD8A8">"Ananya"</span>, 92], [<span style="color:#9FD8A8">"Ravi"</span>, 78]]<br><span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(<span style="color:#9FD8A8">"marks.csv"</span>, <span style="color:#9FD8A8">"w"</span>,<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;newline=<span style="color:#9FD8A8">""</span>) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;w = csv.writer(f)<br>&#160;&#160;&#160;&#160;w.writerow([<span style="color:#9FD8A8">"Name"</span>, <span style="color:#9FD8A8">"Marks"</span>])<br>&#160;&#160;&#160;&#160;w.writerows(rows)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Reading</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">import</span> csv<br><span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(<span style="color:#9FD8A8">"marks.csv"</span>) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> row <span style="color:#F2B33D">in</span> csv.reader(f):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(row)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">['Name', 'Marks']<br>['Ananya', '92']<br>['Ravi', '78']</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 17</p>
+<aside>CSV means comma-separated values: each line is a row, commas separate the columns. Open marks.csv in Excel or Google Sheets to show it becomes a table. newline="" stops blank rows appearing on Windows. When reading, every value comes back as a string ('92'), just like input(), so use int(row[1]) for maths. Skip the header row with next(reader) before the loop.</aside>
+</section>

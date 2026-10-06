@@ -1,0 +1,49 @@
+<section id="c10-comp2" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 10 · Comprehensions</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">More one-line lists</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.7fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;background:#1B2A41;padding:14px 28px;border-radius:14px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">You write</p>
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">You get</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">[n * 2 for n in nums]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">[68, 156, 24, 182]</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">[n for n in nums if n &gt; 50]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">[78, 91]</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">[n % 10 for n in nums]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">[4, 8, 2, 1]</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">[n // 10 for n in nums]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">[3, 7, 1, 9]</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">[c.upper() for c in "odia"]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">['O', 'D', 'I', 'A']</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">nums.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">nums = [34, 78, 12, 91]</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Add <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">if</span> at the end to keep only some items.</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Read numbers typed on one line: <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">[int(x) for x in input().split()]</span></p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 10</p>
+<aside>Go through each row and say it in English: "n times 2 for each n in nums", "n for each n in nums, if n is more than 50". The if version is a filter. The input line in the tip is extremely useful in labs: the user types 10 20 30 on one line and gets the list [10, 20, 30]. Challenge: write the even numbers from 1 to 20 as a comprehension. ([x for x in range(1, 21) if x % 2 == 0].)</aside>
+</section>

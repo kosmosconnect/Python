@@ -1,0 +1,23 @@
+<section id="c22-lib" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 22 · Step 2</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">The Library class: issue and return</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.45fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">library.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">class</span> Library:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> __init__(<span style="color:#F2B33D">self</span>):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">self</span>.books = {}&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># bid -&gt; Book</span><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> add(<span style="color:#F2B33D">self</span>, book):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">self</span>.books[book.bid] = book<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> issue(<span style="color:#F2B33D">self</span>, bid, name):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;book = <span style="color:#F2B33D">self</span>.books[bid]<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> book.holder:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">raise</span> ValueError(<span style="color:#9FD8A8">"Already issued"</span>)<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;book.holder = name<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> give_back(<span style="color:#F2B33D">self</span>, bid):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">self</span>.books[bid].holder = <span style="color:#9FD8A8">""</span></p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:30px;line-height:1.5;color:#4A5568">A <b>dictionary</b> of Book objects, so finding a book by id is instant.</p>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #B54708;padding:20px 28px;border-radius:14px">
+<x-icon name="Warning" style="color:#B54708;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Wrong ids and double issues raise errors. The menu catches them.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 8 · Class 22</p>
+<aside>The methods do not print error messages themselves; they raise, and the menu decides what to show (Week 7). The method is called give_back because return is a Python keyword. Add list_all (loop and print each book) and search (title.lower() contains the word) yourself or from the code folder. Test: lib = Library(); lib.add(Book(...)); lib.issue("B1", "Ananya"); lib.issue("B1", "Subham") should raise.</aside>
+</section>

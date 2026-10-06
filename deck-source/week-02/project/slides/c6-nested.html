@@ -1,0 +1,37 @@
+<section id="c6-nested" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 6 · Nested loops</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">A loop inside a loop</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">rectangle.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">for</span> row <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(1, 4):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> col <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(1, 5):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"*"</span>, end=<span style="color:#9FD8A8">" "</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>()</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">* * * *<br>* * * *<br>* * * *</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Outer loop:</b> one round per row (3 rows)</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Inner loop:</b> one star per column (4 stars)</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>print():</b> after the inner loop: move to a new line</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Like a clock: the minute hand goes all the way round for every single tick of the hour hand.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 6</p>
+<aside>Key idea: for each round of the outer loop, the inner loop runs completely. So the print("*") line runs 3 x 4 = 12 times. Trace it aloud: row 1, col 1 2 3 4, new line; row 2, col 1 2 3 4, new line... Show what happens if print() is indented inside the inner loop (every star on its own line) or removed (all 12 stars on one line). end=" " keeps the cursor on the same line. Viva: how many times does the inner body run for outer range(5) and inner range(3)? (15.) Variation: make the rows and columns come from input().</aside>
+</section>

@@ -1,0 +1,32 @@
+<section id="c5-break" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 5 · break and continue</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Stopping early and skipping a round</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">break: stop the loop now</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">for</span> n <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(1, 10):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> n == 5:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">break</span><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(n, end=<span style="color:#9FD8A8">" "</span>)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">1 2 3 4</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">continue: skip this round</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">for</span> n <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(1, 10):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> n % 3 == 0:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">continue</span><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(n, end=<span style="color:#9FD8A8">" "</span>)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">1 2 4 5 7 8</p>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FBEFD5;padding:32px 48px;border-radius:24px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:56px;height:56px"></x-icon>
+<p style="font-size:30px;line-height:1.5;color:#1B2A41">Real use: keep asking for the PIN with <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">while True:</span> and <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">break</span> out when it is correct.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 5</p>
+<aside>Analogy: you are eating rasagolas from a box. break = you are full, so you stop and close the box. continue = this one is squashed, so you skip it and take the next. Run both programs and ask the student to predict the output first. Show the PIN example live: while True: pin = input("PIN: "); if pin == "1234": print("Welcome"); break; else: print("Try again"). Common confusion: break leaves only the innermost loop it is in (important next class with nested loops). Viva: difference between break and continue? Also mention pass: a do-nothing placeholder, used when a block is required but you have nothing to write yet.</aside>
+</section>

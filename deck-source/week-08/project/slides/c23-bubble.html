@@ -1,0 +1,24 @@
+<section id="c23-bubble" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 23 · Bubble sort</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Bubble sort: the classic sorting algorithm</h2>
+</div>
+<div style="display:grid;grid-template-columns:2.1fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">bubble.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">nums = [64, 25, 12, 22, 11]<br>n = <span style="color:#F2B33D">len</span>(nums)<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(n - 1):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> j <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(n - 1 - i):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> nums[j] &gt; nums[j + 1]:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;nums[j], nums[j + 1] = nums[j + 1], nums[j]<br><span style="color:#F2B33D">print</span>(nums)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">[11, 12, 22, 25, 64]</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:36px;font-weight:600;line-height:1.35;color:#1B2A41">Compare neighbours, swap if they are in the wrong order.</p>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">After each round the biggest number has "bubbled" to the end, so the next round can stop one place earlier.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 8 · Class 23</p>
+<aside>Act it out with 5 cards or coins. Round 1 compares 64-25 (swap), 64-12 (swap), 64-22 (swap), 64-11 (swap): 64 is now last. Round 2 needs only 3 comparisons, and so on. The swap line is the tuple trick from Week 1. In real code you would use sort(), but exams love this algorithm. Viva: how many comparisons in the worst case? (About n squared over 2: it is a slow, O(n^2) algorithm.) Improvement: stop early if a whole round makes no swaps.</aside>
+</section>

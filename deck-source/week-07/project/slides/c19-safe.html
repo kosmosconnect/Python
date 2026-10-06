@@ -1,0 +1,27 @@
+<section id="c19-safe" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 19 · A useful tool</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Keep asking until the input is valid</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">get_int.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">def</span> get_int(prompt):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">while</span> <span style="color:#F2B33D">True</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">try</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(prompt))<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">except</span> ValueError:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Not a number, try again"</span>)<br><br>marks = get_int(<span style="color:#9FD8A8">"Marks: "</span>)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Saved"</span>, marks)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Marks: <span style="color:#B54708">eighty</span><br>Not a number, try again<br>Marks: <span style="color:#B54708">80</span><br>Saved 80</p>
+</div>
+<p style="font-size:36px;font-weight:600;line-height:1.35;color:#1B2A41">Write it once, use it in every program.</p>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Use it in the record manager and expense tracker so wrong typing never crashes them.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 7 · Class 19</p>
+<aside>This combines Week 2 (while True), Week 5 (functions and return) and today. return exits both the loop and the function as soon as a valid number arrives. Ask the student to extend it: get_int(prompt, low, high) that also rejects numbers outside a range, for example marks between 0 and 100. That version is in the code folder.</aside>
+</section>

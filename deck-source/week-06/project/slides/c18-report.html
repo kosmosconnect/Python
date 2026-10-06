@@ -1,0 +1,23 @@
+<section id="c18-report" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 18 · Step 3</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Totals by category</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">expenses.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">def</span> report(data):<br>&#160;&#160;&#160;&#160;t = {}<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> d, cat, amt, note <span style="color:#F2B33D">in</span> data:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;t[cat] = t.get(cat, 0) + <span style="color:#F2B33D">float</span>(amt)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> cat, total <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">sorted</span>(t.items()):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">f"{cat:10} Rs. {total:8.2f}"</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Total:"</span>, <span style="color:#F2B33D">sum</span>(t.values()))</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Books&#160;&#160;&#160;&#160;&#160;&#160;Rs.&#160;&#160;&#160;250.00<br>Food&#160;&#160;&#160;&#160;&#160;&#160;&#160;Rs.&#160;&#160;&#160;185.00<br>Travel&#160;&#160;&#160;&#160;&#160;Rs.&#160;&#160;&#160;&#160;60.00<br>Total: 495.0</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">The letter-counting pattern from Week 4, now adding rupees per category.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 18</p>
+<aside>The for line unpacks each 4-item row straight into four variables. {cat:10} pads the name to 10 characters and {total:8.2f} lines the amounts up in a column: a neat touch for reports. The full program with the menu is in code/class18_expenses.py. Run it, add five or six expenses over two runs, and show that the report includes the ones from the first run.</aside>
+</section>

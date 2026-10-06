@@ -1,0 +1,44 @@
+<section id="c8-find" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 8 · Searching</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Finding things inside text</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">in</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Is it there? True or False</p>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">s = <span style="color:#9FD8A8">"Jagannath"</span><br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"nath"</span> <span style="color:#F2B33D">in</span> s)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">True</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">find()</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Where is it? -1 if missing</p>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">print</span>(s.find(<span style="color:#9FD8A8">"nath"</span>))<br><span style="color:#F2B33D">print</span>(s.find(<span style="color:#9FD8A8">"xyz"</span>))</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">5<br>-1</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">count()</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">How many times?</p>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">print</span>(s.count(<span style="color:#9FD8A8">"a"</span>))</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">3</p>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FBEFD5;padding:32px 48px;border-radius:24px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:56px;height:56px"></x-icon>
+<p style="font-size:30px;line-height:1.5;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">startswith()</span> and <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">endswith()</span> check the beginning and end: <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">email.endswith("@gmail.com")</span></p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 8</p>
+<aside>in is the one to use most: it reads like English and works with lists too. find gives the index of the first match, which you can use with slicing: s[s.find("nath"):] gives "nath". find returns -1 when the text is missing (index() would crash instead). count is case-sensitive: "Jagannath".count("j") is 0. Fix with s.lower().count("j").</aside>
+</section>

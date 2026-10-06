@@ -1,0 +1,31 @@
+<section id="c7-loop" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 7 · Looping</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Visiting every character</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">vowels.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">word = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Word: "</span>)<br>count = 0<br><span style="color:#F2B33D">for</span> ch <span style="color:#F2B33D">in</span> word:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> ch <span style="color:#F2B33D">in</span> <span style="color:#9FD8A8">"aeiouAEIOU"</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;count += 1<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Vowels:"</span>, count)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Word: <span style="color:#B54708">Konark</span><br>Vowels: 2</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:36px;font-weight:600;line-height:1.35;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">for ch in word</span> gives you one character per round.</p>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Read it as</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">for each character <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">ch</span> in <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">word</span>, do the indented block</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">ch in "aeiou"</span> checks if ch is one of those letters.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 7</p>
+<aside>This is the string version of the counting loop from Week 2. Trace "Konark": K no, o yes (1), n no, a yes (2), r no, k no. Show the index version too, which some teachers prefer: for i in range(len(word)): ch = word[i]. Both are correct; the first is the Python way. Variation: count consonants (letters that are not vowels, so check ch.isalpha() too, coming next class), or count spaces to count words.</aside>
+</section>

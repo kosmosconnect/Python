@@ -1,0 +1,55 @@
+<section id="c9-change" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 9 · List methods</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Adding and removing items</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;background:#1B2A41;padding:14px 28px;border-radius:14px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">You write</p>
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">What it does</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.append("Chhena")</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">adds at the end</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.insert(0, "Dahi")</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">adds at index 0</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.remove("Pakhala")</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">removes by value</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.pop()</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">removes last item</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.pop(1)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">removes index 1</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.index("Rasagola")</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">where is it?</p>
+</div>
+<div style="display:grid;grid-template-columns:520px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">f.count("Rasagola")</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">how many times?</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">foods.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">f = [<span style="color:#9FD8A8">"Rasagola"</span>, <span style="color:#9FD8A8">"Pakhala"</span>]</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">Methods change the list itself. No need to store the result.</p>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #B54708;padding:20px 28px;border-radius:14px">
+<x-icon name="Warning" style="color:#B54708;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Removing something that is not there gives an error. Check with <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">in</span> first.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 9</p>
+<aside>Contrast with strings: s.upper() gave a new string, but f.append() changes f itself and returns None. So f = f.append("x") is a classic bug that leaves f as None. Run each method live and print f after it. pop() also gives back the removed item: last = f.pop(). Also show del f[0] and f.clear(). Viva: difference between remove() and pop()? (remove deletes by value, pop by index and returns it.)</aside>
+</section>

@@ -1,0 +1,27 @@
+<section id="c17-count" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 17 · A file program</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Counting lines, words and characters</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.85fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">wc.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">name = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"File: "</span>)<br>lines = words = chars = 0<br><span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(name) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> line <span style="color:#F2B33D">in</span> f:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;lines += 1<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;words += <span style="color:#F2B33D">len</span>(line.split())<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;chars += <span style="color:#F2B33D">len</span>(line)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">f"{lines} lines, {words} words, {chars} chars"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">File: <span style="color:#B54708">cities.txt</span><br>4 lines, 4 words, 32 chars</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">A classic lab program: Week 3's <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">split()</span> and <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">len()</span>, now on a whole file.</p>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">lines = words = chars = 0</span> sets all three to 0 in one line.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 17</p>
+<aside>chars counts the \n at the end of each line too: Bhubaneswar 11 + Cuttack 7 + Puri 4 + Konark 6 = 28 letters, plus 4 new-line characters = 32. Variations for practice: count how many lines contain a given word, find the longest line, or copy one file to another with every line in capital letters.</aside>
+</section>

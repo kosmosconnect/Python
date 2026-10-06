@@ -1,0 +1,68 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-06T17:00:00Z"
+  },
+  "lists": "css",
+  "title": "Python Week 4 – Collections & Mini-project 1",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "c10",
+    "c10-grid",
+    "c10-loop",
+    "c10-add",
+    "c10-comp",
+    "c10-comp2",
+    "c10-try",
+    "c11",
+    "c11-tuple",
+    "c11-set",
+    "c11-dict",
+    "c11-ops",
+    "c11-freq",
+    "c11-pick",
+    "c11-try",
+    "c12",
+    "c12-plan",
+    "c12-menu",
+    "c12-add",
+    "c12-top",
+    "c12-try",
+    "wrap"
+  ],
+  "sections": {
+    "s0": {
+      "description": "Week 4 cover",
+      "start": "cover"
+    },
+    "s1": {
+      "description": "Class 10 — 2D lists, matrices and list comprehensions",
+      "start": "c10"
+    },
+    "s2": {
+      "description": "Class 11 — tuples, sets and dictionaries",
+      "start": "c11"
+    },
+    "s3": {
+      "description": "Class 12 — Mini-project 1: student record manager",
+      "start": "c12"
+    },
+    "s4": {
+      "description": "Week 4 recap and what comes next",
+      "start": "wrap"
+    }
+  },
+  "faces": {
+    "rubik": {
+      "family": "Rubik",
+      "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"
+    },
+    "jetbrains-mono": {
+      "family": "JetBrains Mono",
+      "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    }
+  },
+  "designSystems": []
+}

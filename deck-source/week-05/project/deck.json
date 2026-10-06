@@ -1,0 +1,68 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-06T17:15:00Z"
+  },
+  "lists": "css",
+  "title": "Python Week 5 – Functions & Recursion",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "c13",
+    "c13-why",
+    "c13-def",
+    "c13-return",
+    "c13-args",
+    "c13-prime",
+    "c13-try",
+    "c14",
+    "c14-scope",
+    "c14-multi",
+    "c14-lambda",
+    "c14-sort",
+    "c14-refactor",
+    "c14-try",
+    "c15",
+    "c15-idea",
+    "c15-fact",
+    "c15-trace",
+    "c15-more",
+    "c15-vs",
+    "c15-try",
+    "wrap"
+  ],
+  "sections": {
+    "s0": {
+      "description": "Week 5 cover",
+      "start": "cover"
+    },
+    "s1": {
+      "description": "Class 13 — defining functions, parameters, return and arguments",
+      "start": "c13"
+    },
+    "s2": {
+      "description": "Class 14 — scope, several return values, lambda, sorting with key, tidy code",
+      "start": "c14"
+    },
+    "s3": {
+      "description": "Class 15 — recursion: base case, factorial, tracing, Fibonacci",
+      "start": "c15"
+    },
+    "s4": {
+      "description": "Week 5 recap and what comes next",
+      "start": "wrap"
+    }
+  },
+  "faces": {
+    "rubik": {
+      "family": "Rubik",
+      "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"
+    },
+    "jetbrains-mono": {
+      "family": "JetBrains Mono",
+      "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    }
+  },
+  "designSystems": []
+}

@@ -1,0 +1,34 @@
+<section id="c10-loop" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 10 · Looping a table</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Visiting every cell</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">rows.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]<br><span style="color:#F2B33D">for</span> row <span style="color:#F2B33D">in</span> m:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> x <span style="color:#F2B33D">in</span> row:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(x, end=<span style="color:#9FD8A8">" "</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"| sum ="</span>, <span style="color:#F2B33D">sum</span>(row))</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">1 2 3 | sum = 6<br>4 5 6 | sum = 15<br>7 8 9 | sum = 24</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Outer loop:</b> gives one row (a list) per round</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Inner loop:</b> gives each number in that row</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Same shape as the Week 2 star patterns: rows outside, columns inside.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 10</p>
+<aside>Connect this to Week 2: nested loops again, but now they walk through stored data instead of printing stars. The index version is also important for exams: for i in range(len(m)): for j in range(len(m[i])): print(m[i][j]). Use the index version whenever you need the position, for example the diagonal: m[i][i] for i in range(3) gives 1, 5, 9. Ask the student to change the program to print column sums instead (harder: loop over j outside and i inside).</aside>
+</section>

@@ -1,0 +1,34 @@
+<section id="c6-pyramid" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 6 · Pyramid</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">The centred pyramid</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">pyramid.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">n = 4<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(1, n + 1):<br>&#160;&#160;&#160;&#160;spaces = <span style="color:#9FD8A8">" "</span> * (n - i)<br>&#160;&#160;&#160;&#160;stars = <span style="color:#9FD8A8">"* "</span> * i<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(spaces + stars)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">&#160;&#160;&#160;*<br>&#160;&#160;* *<br>&#160;* * *<br>* * * *</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Spaces:</b> row i starts with n - i spaces</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Stars:</b> then i copies of "* "</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Draw it on squared paper first. Count the spaces and stars in each row, then find the rule.</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">Row 1: 3 spaces, 1 star. Row 4: 0 spaces, 4 stars.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 6</p>
+<aside>The pyramid is the most asked pattern. The method matters more than the code: write a small table with columns row, spaces, stars. Row 1: 3, 1. Row 2: 2, 2. Row 3: 1, 3. Row 4: 0, 4. Spaces go down as rows go up, so spaces = n - i. Once the table is right, the code is easy. Challenge: the diamond, which is this pyramid followed by an upside-down one (the second loop runs i from n - 1 down to 1). Common bug: using "*" without the space, which gives a lopsided triangle.</aside>
+</section>

@@ -1,0 +1,26 @@
+<section id="c12-add" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 12 · Step 2</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Adding and showing students</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.55fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">records.py · choices 1 and 2</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#8FA3B8"># choice 1: add</span><br>name = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Name: "</span>).strip().title()<br>marks = []<br><span style="color:#F2B33D">for</span> sub <span style="color:#F2B33D">in</span> [<span style="color:#9FD8A8">"Maths"</span>, <span style="color:#9FD8A8">"Physics"</span>, <span style="color:#9FD8A8">"Python"</span>]:<br>&#160;&#160;&#160;&#160;marks.append(<span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(sub + <span style="color:#9FD8A8">": "</span>)))<br>students[name] = marks<br><span style="color:#8FA3B8"># choice 2: show</span><br><span style="color:#F2B33D">for</span> name, m <span style="color:#F2B33D">in</span> students.items():<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(name, m, <span style="color:#9FD8A8">f"{sum(m) / 3:.1f}"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Name: <span style="color:#B54708">ananya</span><br>Maths: <span style="color:#B54708">78</span><br>Physics: <span style="color:#B54708">85</span><br>Python: <span style="color:#B54708">92</span><br>Ananya [78, 85, 92] 85.0</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">.strip().title()</span> turns "  ananya" into "Ananya", so searching works later.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 12</p>
+<aside>Put the add block (lines 2 to 6) inside the if choice == "1" branch, indented, and the show block (lines 8 and 9) inside elif choice == "2". The subject list makes the loop ask three questions with one input line. Test: add two students, then choose 2. Edge case to discuss: what if nobody has been added yet and the user picks 2? Add if not students: print("No students yet").</aside>
+</section>

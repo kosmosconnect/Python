@@ -1,0 +1,30 @@
+<section id="c5-digits" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 5 · Digits</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Taking a number apart, digit by digit</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">digits.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">n = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Number: "</span>))<br>rev = 0<br>total = 0<br><span style="color:#F2B33D">while</span> n &gt; 0:<br>&#160;&#160;&#160;&#160;d = n % 10&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># last digit</span><br>&#160;&#160;&#160;&#160;rev = rev * 10 + d<br>&#160;&#160;&#160;&#160;total += d<br>&#160;&#160;&#160;&#160;n //= 10&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># drop it</span><br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Reversed:"</span>, rev)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Digit sum:"</span>, total)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Number: <span style="color:#B54708">1234</span><br>Reversed: 4321<br>Digit sum: 10</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Palindrome?</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Keep <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">original = n</span>. At the end, <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">rev == original</span> means yes (121, 1331).</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">n % 10</span> = last digit. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">n // 10</span> drops it.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 5</p>
+<aside>This one pattern solves many lab questions: reverse a number, sum of digits, count digits, palindrome number and Armstrong number. Trace 1234 in a table with columns n, d, rev, total: (1234, 4, 4, 4), (123, 3, 43, 7), (12, 2, 432, 9), (1, 1, 4321, 10), then n becomes 0 and the loop stops. We use while, not for, because we do not know how many digits there are. Common bug: forgetting n //= 10, which gives an infinite loop. Another: after the loop n is 0, so you must keep a copy if you need the original. Variation for homework: count the digits (add 1 each round instead of adding d). Armstrong: 153 = 1^3 + 5^3 + 3^3.</aside>
+</section>

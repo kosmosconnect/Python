@@ -1,0 +1,26 @@
+<section id="c19-raise" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 19 · raise</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Raising your own errors</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">withdraw.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">def</span> withdraw(balance, amount):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> amount &lt;= 0:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">raise</span> ValueError(<span style="color:#9FD8A8">"Amount must be &gt; 0"</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> amount &gt; balance:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">raise</span> ValueError(<span style="color:#9FD8A8">"Not enough balance"</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> balance - amount<br><br><span style="color:#F2B33D">try</span>:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(withdraw(500, 800))<br><span style="color:#F2B33D">except</span> ValueError <span style="color:#F2B33D">as</span> e:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Error:"</span>, e)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Error: Not enough balance</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">raise</span> stops the function and sends an error to whoever called it.</p>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">The caller decides how to show it. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">as e</span> gives the message.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 7 · Class 19</p>
+<aside>Functions should refuse bad requests instead of returning nonsense. Here the function only checks; the caller decides whether to print a message, ask again or stop. Try withdraw(500, -50) and withdraw(500, 200) (gives 300). This leads straight into tomorrow's BankAccount class, where withdraw becomes a method.</aside>
+</section>

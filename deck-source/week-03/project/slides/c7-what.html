@@ -1,0 +1,41 @@
+<section id="c7-what" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 7 · Strings</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">A string is text in quotes</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Making one</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">city = <span style="color:#9FD8A8">"Bhubaneswar"</span><br>food = <span style="color:#9FD8A8">'rasagola'</span><br><span style="color:#F2B33D">print</span>(<span style="color:#F2B33D">len</span>(city))</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">11</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Joining: +</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">a = <span style="color:#9FD8A8">"Ananya"</span><br>b = <span style="color:#9FD8A8">"Das"</span><br><span style="color:#F2B33D">print</span>(a + <span style="color:#9FD8A8">" "</span> + b)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Ananya Das</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Repeating: *</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Ha"</span> * 3)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"-"</span> * 12)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">HaHaHa<br>------------</p>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FFFDF8;border:2px solid #B54708;padding:28px 48px;border-radius:24px">
+<x-icon name="Warning" style="color:#B54708;width:56px;height:56px"></x-icon>
+<p style="font-size:30px;line-height:1.5;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">"Age: " + 18</span> is an error. Turn the number into text first: <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">"Age: " + str(18)</span>.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 7</p>
+<aside>len() counts characters, including spaces: len("Hi there") is 8. Show the error from the warning live: TypeError: can only concatenate str (not "int") to str. Two fixes: str(18), or better an f-string: f"Age: {age}". Triple quotes make a multi-line string: useful for printing a menu. Viva: is "5" + "5" equal to 10? (No: "55".)</aside>
+</section>

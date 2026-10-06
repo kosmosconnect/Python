@@ -1,0 +1,27 @@
+<section id="c7-immut" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 7 · Immutable</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Strings cannot be changed in place</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">fix_name.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">name = <span style="color:#9FD8A8">"priyanka"</span><br><span style="color:#8FA3B8"># name[0] = "P"&#160;&#160;&#160;TypeError!</span><br>name = <span style="color:#9FD8A8">"P"</span> + name[1:]<br><span style="color:#F2B33D">print</span>(name)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Priyanka</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:36px;font-weight:600;line-height:1.35;color:#1B2A41">You cannot change a letter inside a string.</p>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">Instead, build a <b>new</b> string and store it in the same variable.</p>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><b>Immutable</b> means cannot be changed. Lists (Class 9) are the opposite: mutable.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 7</p>
+<aside>Run the commented line to show the error: TypeError: 'str' object does not support item assignment. Analogy: a string is like a printed exam paper; to fix a word you print a new copy. Viva favourite: "Are strings mutable in Python?" (No.) "Name a mutable type." (list.) The fix uses slicing from the last slide: everything from index 1 onwards. This is exactly what the .capitalize() method does, which we meet next class.</aside>
+</section>

@@ -1,0 +1,30 @@
+<section id="c23-binary" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 23 · Binary search</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Binary search: halve the list each time</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.45fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">binary.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">def</span> binary_search(nums, target):<br>&#160;&#160;&#160;&#160;low, high = 0, <span style="color:#F2B33D">len</span>(nums) - 1<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">while</span> low &lt;= high:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;mid = (low + high) // 2<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> nums[mid] == target:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> mid<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">elif</span> nums[mid] &lt; target:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;low = mid + 1<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">else</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;high = mid - 1<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> -1</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">use it</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">nums = [11, 12, 22, 25, 64]<br><span style="color:#F2B33D">print</span>(binary_search(nums, 25))</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">3</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #B54708;padding:20px 28px;border-radius:14px">
+<x-icon name="Warning" style="color:#B54708;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Works only on a <b>sorted</b> list.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 8 · Class 23</p>
+<aside>Trace finding 25: low 0, high 4, mid 2 (22 is smaller, so low = 3); low 3, high 4, mid 3 (25 found, return 3). Linear search checks items one by one (up to n checks); binary search halves the range each time, so 1000 items need at most about 10 checks. Viva: why must the list be sorted? (Otherwise we cannot know which half to throw away.) A recursive version is also common in exams: same idea, calling itself on one half.</aside>
+</section>

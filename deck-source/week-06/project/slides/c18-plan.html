@@ -1,0 +1,33 @@
+<section id="c18-plan" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 18 · The plan</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">What the expense tracker does</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<p style="font-size:24px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 18px;border-radius:999px;align-self:start">1</p>
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Load</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Read old expenses from expenses.csv when it starts.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<p style="font-size:24px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 18px;border-radius:999px;align-self:start">2</p>
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Add</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Type an amount, category and note. Saved at once.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<p style="font-size:24px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 18px;border-radius:999px;align-self:start">3</p>
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Show</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">List every expense with a running total.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<p style="font-size:24px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 18px;border-radius:999px;align-self:start">4</p>
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Report</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Total spent per category: food, travel, books…</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:28px 40px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">One row per expense: <b>date, category, amount, note</b>, e.g. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">2026-10-06,Food,40,Hostel Maggi</span></p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 18</p>
+<aside>Discuss the file design first: one row per expense with four columns. Why save each expense immediately (append) instead of only at exit? Because if the program crashes or the laptop dies, nothing is lost. Categories to suggest: Food, Travel, Books, Mobile, Other. Ask the student what they spent money on this week to create real test data.</aside>
+</section>

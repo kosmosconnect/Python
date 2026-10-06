@@ -1,0 +1,30 @@
+<section id="c10-grid" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 10 · 2D lists</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">A table is a list of rows</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">matrix.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">m = [[1, 2, 3],<br>&#160;&#160;&#160;&#160;&#160;[4, 5, 6],<br>&#160;&#160;&#160;&#160;&#160;[7, 8, 9]]<br><span style="color:#F2B33D">print</span>(m[0])<br><span style="color:#F2B33D">print</span>(m[1][2])<br><span style="color:#F2B33D">print</span>(<span style="color:#F2B33D">len</span>(m), <span style="color:#F2B33D">len</span>(m[0]))</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">[1, 2, 3]<br>6<br>3 3</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">m[row][col]</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">First pick the row, then the column inside that row.</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Like a class register: each row is a student, each column a subject.</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">len(m)</span> counts rows. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">len(m[0])</span> counts columns.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 10</p>
+<aside>Draw the 3 by 3 grid on paper with row numbers 0 to 2 down the side and column numbers 0 to 2 across the top. m[1] is the whole second row [4, 5, 6]; m[1][2] is the third item of that row, 6. Ask: how do you get 7? (m[2][0].) And the centre? (m[1][1].) Writing the list on three lines is optional, but it makes the table shape visible. Same as a 2D array in C, int m[3][3], but without declaring the size.</aside>
+</section>

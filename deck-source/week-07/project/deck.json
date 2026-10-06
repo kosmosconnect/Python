@@ -1,0 +1,68 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-06T17:45:00Z"
+  },
+  "lists": "css",
+  "title": "Python Week 7 – Exceptions & OOP",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "c19",
+    "c19-kinds",
+    "c19-common",
+    "c19-try",
+    "c19-multi",
+    "c19-safe",
+    "c19-raise",
+    "c19-try-it",
+    "c20",
+    "c20-idea",
+    "c20-first",
+    "c20-self",
+    "c20-bank",
+    "c20-str",
+    "c20-try",
+    "c21",
+    "c21-inherit",
+    "c21-super",
+    "c21-poly",
+    "c21-pillars",
+    "c21-try",
+    "wrap"
+  ],
+  "sections": {
+    "s0": {
+      "description": "Week 7 cover",
+      "start": "cover"
+    },
+    "s1": {
+      "description": "Class 19 — errors, exceptions, try/except, else, finally, raise",
+      "start": "c19"
+    },
+    "s2": {
+      "description": "Class 20 — classes, objects, __init__, self, methods and __str__",
+      "start": "c20"
+    },
+    "s3": {
+      "description": "Class 21 — inheritance, super(), polymorphism and the four pillars",
+      "start": "c21"
+    },
+    "s4": {
+      "description": "Week 7 recap and what comes next",
+      "start": "wrap"
+    }
+  },
+  "faces": {
+    "rubik": {
+      "family": "Rubik",
+      "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"
+    },
+    "jetbrains-mono": {
+      "family": "JetBrains Mono",
+      "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    }
+  },
+  "designSystems": []
+}

@@ -1,0 +1,29 @@
+<section id="c21-inherit" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 21 · Inheritance</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">A Student is a Person</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">people.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">class</span> Person:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> __init__(<span style="color:#F2B33D">self</span>, name):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">self</span>.name = name<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> greet(<span style="color:#F2B33D">self</span>):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Namaskar, I am"</span>, <span style="color:#F2B33D">self</span>.name)<br><br><span style="color:#F2B33D">class</span> Student(Person):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> study(<span style="color:#F2B33D">self</span>):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#F2B33D">self</span>.name, <span style="color:#9FD8A8">"is coding"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">use it</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">s = Student(<span style="color:#9FD8A8">"Subham"</span>)<br>s.greet()<br>s.study()</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Namaskar, I am Subham<br>Subham is coding</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><b>Student(Person)</b>: the child gets everything from the parent, plus <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">study()</span>.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 7 · Class 21</p>
+<aside>The brackets in class Student(Person) mean "Student inherits from Person". Student has no __init__ or greet of its own, yet s.greet() works: Python looks in Student, does not find it, and moves up to Person. This is an "is-a" relationship: a Student is a Person. Ask: is a Person a Student? (No: p = Person("X"); p.study() is an AttributeError.) Viva: types of inheritance: single, multiple, multilevel, hierarchical (name them; single is enough for code).</aside>
+</section>

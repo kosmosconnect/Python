@@ -1,0 +1,30 @@
+<section id="c16-random" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 16 · random</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Dice, OTPs and lucky draws</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">lucky.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">import</span> random<br>dice = random.randint(1, 6)<br>otp = random.randint(1000, 9999)<br>snack = random.choice([<span style="color:#9FD8A8">"Samosa"</span>, <span style="color:#9FD8A8">"Bara"</span>,<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#9FD8A8">"Gupchup"</span>])<br>names = [<span style="color:#9FD8A8">"Ananya"</span>, <span style="color:#9FD8A8">"Subham"</span>, <span style="color:#9FD8A8">"Priyanka"</span>]<br>random.shuffle(names)<br><span style="color:#F2B33D">print</span>(dice, otp, snack)<br><span style="color:#F2B33D">print</span>(names)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">4 7392 Bara<br>['Priyanka', 'Ananya', 'Subham']</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">randint(a, b)</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">a whole number from a to b, <b>both included</b></p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">choice / shuffle</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">pick one item / mix the whole list</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 16</p>
+<aside>Run it three times: the output changes every time, so the numbers on the slide are just one example. Note randint includes both ends, unlike range. Mini-game for the student (good practice of loops and if): the computer picks a number from 1 to 50 and the user guesses, with "too high" or "too low" hints, counting the tries. The answer is in solutions/class16_practice.py. random.seed(1) makes the results repeatable, which helps when testing.</aside>
+</section>

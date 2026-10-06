@@ -1,0 +1,23 @@
+<section id="c12-top" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 12 · Step 3</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Searching and finding the topper</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.55fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">records.py · choices 3 and 4</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#8FA3B8"># choice 3: find</span><br>name = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Find: "</span>).strip().title()<br><span style="color:#F2B33D">if</span> name <span style="color:#F2B33D">in</span> students:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(name, students[name])<br><span style="color:#F2B33D">else</span>:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Not found"</span>)<br><span style="color:#8FA3B8"># choice 4: topper</span><br>best, best_total = <span style="color:#9FD8A8">""</span>, -1<br><span style="color:#F2B33D">for</span> name, m <span style="color:#F2B33D">in</span> students.items():<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> <span style="color:#F2B33D">sum</span>(m) &gt; best_total:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;best, best_total = name, <span style="color:#F2B33D">sum</span>(m)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Topper:"</span>, best, best_total)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Find: <span style="color:#B54708">subham</span><br>Subham [65, 70, 88]<br>Topper: Ananya 255</p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">The topper loop is the largest-number pattern from Week 3, using totals.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 12</p>
+<aside>Search uses in on the dictionary keys, which is why the names were stored in title case. The topper search starts with best_total = -1 so that any real total wins. Once both blocks work, the full program is in code/class12_records.py. Run through a full test: add three students, show, search for one that exists and one that does not, show the topper, exit.</aside>
+</section>

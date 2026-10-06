@@ -1,0 +1,34 @@
+<section id="c19-try" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 19 · try and except</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Catching an error</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.4fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">safe_age.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">try</span>:<br>&#160;&#160;&#160;&#160;age = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Age: "</span>))<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Next year you will be"</span>, age + 1)<br><span style="color:#F2B33D">except</span> ValueError:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Please type a number, like 19"</span>)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Program continues"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Age: <span style="color:#B54708">nineteen</span><br>Please type a number, like 19<br>Program continues</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>try:</b> run the risky lines</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>except:</b> runs only if that error happens</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>After:</b> the program carries on normally</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 7 · Class 19</p>
+<aside>Run it twice: with 19 (the except block is skipped) and with nineteen (the int() line fails, Python jumps straight to except, and the print inside try never runs). Name the exception you expect: a bare except: catches everything, even typing mistakes in your own code, which hides bugs. Keep the try block small: only the lines that can fail.</aside>
+</section>

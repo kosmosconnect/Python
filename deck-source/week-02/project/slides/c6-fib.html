@@ -1,0 +1,31 @@
+<section id="c6-fib" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 6 · Fibonacci</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">The Fibonacci series</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">fibonacci.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">n = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"How many terms? "</span>))<br>a, b = 0, 1<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(n):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(a, end=<span style="color:#9FD8A8">" "</span>)<br>&#160;&#160;&#160;&#160;a, b = b, a + b</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">How many terms? <span style="color:#B54708">8</span><br>0 1 1 2 3 5 8 13</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:36px;font-weight:600;line-height:1.35;color:#1B2A41">Each number is the sum of the two before it.</p>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">How a and b move</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">0, 1 → 1, 1 → 1, 2 → 2, 3 → 3, 5 → …</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">a, b = b, a + b</span> updates both at once, like the swap trick from Week 1.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 6</p>
+<aside>Write 0 1 1 2 3 5 8 13 on the board and ask the student to find the rule before showing code. a is the number we print, b is the next one. In a, b = b, a + b, the right side is worked out first using the OLD values, then both are stored. If the student writes a = b then b = a + b on two lines, the result is wrong: let them try it and find out why. The classic C-style version uses a third variable: c = a + b; a = b; b = c. Fibonacci appears in nature (sunflower seeds, pine cones), which makes a nice story. Next week, recursion gives another way to write it.</aside>
+</section>

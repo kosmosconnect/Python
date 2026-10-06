@@ -1,0 +1,24 @@
+<section id="c15-idea" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 15 · The idea</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Every recursive function has two parts</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<p style="font-size:24px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 18px;border-radius:999px;align-self:start">Stop</p>
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Base case</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">The smallest problem, answered directly. Without it the calls never end.</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<p style="font-size:24px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 18px;border-radius:999px;align-self:start">Shrink</p>
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Recursive case</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Solve a smaller version by calling yourself, then finish the job.</p>
+</div>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FBEFD5;padding:32px 48px;border-radius:24px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:56px;height:56px"></x-icon>
+<p style="font-size:30px;line-height:1.5;color:#1B2A41">Story: in a long queue at the Jagannath temple you ask the person ahead, “What number are you?” They ask the person ahead of them… until the first person says “1”. Then the answers come back, each adding 1.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 5 · Class 15</p>
+<aside>Act out the queue story with three or four objects on the table. The question travels forward (the calls), the first person answers directly (the base case), and the answers travel back, each person adding one (the return values). That forward-then-back shape is exactly what happens in the computer. If there is no first person who knows the answer, the question never stops: that is infinite recursion, and Python stops it with RecursionError after about 1000 calls.</aside>
+</section>

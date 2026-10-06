@@ -1,0 +1,61 @@
+<section id="c7-slice" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 7 · Slicing</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Cutting out a piece: s[start:stop]</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;background:#1B2A41;padding:14px 28px;border-radius:14px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">You write</p>
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">You get</p>
+</div>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">s[0:3]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">"Cut"</p>
+</div>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">s[3:7]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">"tack"</p>
+</div>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">s[:3]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">"Cut"</p>
+</div>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">s[3:]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">"tack"</p>
+</div>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">s[-4:]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">"tack"</p>
+</div>
+<div style="display:grid;grid-template-columns:280px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">s[::-1]</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">"kcattuC"</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">slice.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">s = <span style="color:#9FD8A8">"Cuttack"</span></p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Same rule as <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">range()</span>: start is included, <b>stop is not</b>.</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Leave out start:</b> begin at 0</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Leave out stop:</b> go to the end</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">[::-1]</span> walks backwards: the fastest way to reverse a string.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 7</p>
+<aside>Write Cuttack with indexes 0 to 6 under it (C u t t a c k). s[0:3] takes boxes 0, 1, 2. A useful way to think: the slice length is stop - start. Slicing never gives an IndexError: s[0:100] just returns the whole string. The third number is the step, like in range: s[::2] gives every second character ("Ctak"). Exam question: reverse a string without a loop (s[::-1]). Ask the student to slice their own name: first 3 letters, last 3 letters.</aside>
+</section>

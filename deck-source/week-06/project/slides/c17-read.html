@@ -1,0 +1,25 @@
+<section id="c17-read" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 17 · Reading</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Reading a file line by line</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">read_cities.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(<span style="color:#9FD8A8">"cities.txt"</span>) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> line <span style="color:#F2B33D">in</span> f:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(line.strip())<br><br><span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(<span style="color:#9FD8A8">"cities.txt"</span>) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;lines = f.readlines()<br><span style="color:#F2B33D">print</span>(<span style="color:#F2B33D">len</span>(lines), <span style="color:#9FD8A8">"cities"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Bhubaneswar<br>Cuttack<br>Puri<br>Konark<br>4 cities</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Each line ends with \n. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">.strip()</span> removes it. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">f.read()</span> gives the whole file as one string.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 17</p>
+<aside>Show what happens without strip(): blank lines between cities, because the line already ends with \n and print adds another. Three ways to read: read() gives one big string, readlines() a list of lines, and the for loop goes line by line (best for big files). Reading a file that does not exist gives FileNotFoundError; next week we learn to catch it. Quick check: use os.path.exists("cities.txt") before opening.</aside>
+</section>

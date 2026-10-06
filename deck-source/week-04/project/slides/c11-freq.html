@@ -1,0 +1,34 @@
+<section id="c11-freq" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 11 · Counting</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Counting letters with a dictionary</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">frequency.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">word = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Word: "</span>)<br>freq = {}<br><span style="color:#F2B33D">for</span> ch <span style="color:#F2B33D">in</span> word:<br>&#160;&#160;&#160;&#160;freq[ch] = freq.get(ch, 0) + 1<br><span style="color:#F2B33D">print</span>(freq)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Word: <span style="color:#B54708">banana</span><br>{'b': 1, 'a': 3, 'n': 2}</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>New letter:</b> <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">get</span> gives 0, so its count becomes 1</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Seen before:</b> its count goes up by 1</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Swap <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">word</span> for <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">line.split()</span> to count words instead.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 11</p>
+<aside>This counting pattern is one of the most useful in all of programming: votes, word counts, marks per grade. Trace banana: b new (1), a new (1), n new (1), a seen (2), n seen (2), a seen (3). Without get you need an if: if ch in freq: freq[ch] += 1 else: freq[ch] = 1. Show both; exams accept either. Ask: which letter is most common? Loop through freq.items() and keep the biggest, the same pattern as the largest number.</aside>
+</section>

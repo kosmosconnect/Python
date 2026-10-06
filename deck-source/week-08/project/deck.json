@@ -1,0 +1,67 @@
+{
+  "v": 4,
+  "createdOnFiles": {
+    "v": 1,
+    "at": "2026-10-06T18:00:00Z"
+  },
+  "lists": "css",
+  "title": "Python Week 8 – Capstone, Revision & Viva",
+  "cover": "cover",
+  "order": [
+    "cover",
+    "c22",
+    "c22-plan",
+    "c22-book",
+    "c22-lib",
+    "c22-save",
+    "c22-menu",
+    "c22-try",
+    "c23",
+    "c23-map",
+    "c23-output",
+    "c23-bubble",
+    "c23-binary",
+    "c23-mistakes",
+    "c23-try",
+    "c24",
+    "c24-viva1",
+    "c24-viva2",
+    "c24-viva3",
+    "c24-lab",
+    "c24-next",
+    "wrap"
+  ],
+  "sections": {
+    "s0": {
+      "description": "Week 8 cover",
+      "start": "cover"
+    },
+    "s1": {
+      "description": "Class 22 — capstone: library management system",
+      "start": "c22"
+    },
+    "s2": {
+      "description": "Class 23 — exam revision: programs, outputs, sorting, searching, mistakes",
+      "start": "c23"
+    },
+    "s3": {
+      "description": "Class 24 — mock viva, lab-exam tips and what next",
+      "start": "c24"
+    },
+    "s4": {
+      "description": "Course complete",
+      "start": "wrap"
+    }
+  },
+  "faces": {
+    "rubik": {
+      "family": "Rubik",
+      "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"
+    },
+    "jetbrains-mono": {
+      "family": "JetBrains Mono",
+      "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"
+    }
+  },
+  "designSystems": []
+}

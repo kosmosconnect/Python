@@ -1,0 +1,30 @@
+<section id="c20-str" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 20 · __str__</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Printing an object nicely</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">student_str.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">class</span> Student:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> __init__(<span style="color:#F2B33D">self</span>, name, roll):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">self</span>.name = name<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">self</span>.roll = roll<br><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">def</span> __str__(<span style="color:#F2B33D">self</span>):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> <span style="color:#9FD8A8">f"{self.roll}: {self.name}"</span><br><br>s = Student(<span style="color:#9FD8A8">"Ananya"</span>, 21)<br><span style="color:#F2B33D">print</span>(s)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">21: Ananya</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Without __str__</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">print(s) shows something like <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">&lt;__main__.Student object at 0x7f…&gt;</span></p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:16px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">With __str__</h3>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">print(s) uses the text your method returns</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 7 · Class 20</p>
+<aside>__str__ must RETURN a string, not print it. It is called automatically by print() and str(). This is a first taste of "special methods" (dunder methods); others like __len__ and __eq__ exist but are not needed now. Ask the student to add __str__ to the Account class so print(acc) shows "Priyanka: Rs. 1200".</aside>
+</section>

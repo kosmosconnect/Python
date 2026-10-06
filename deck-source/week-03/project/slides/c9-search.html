@@ -1,0 +1,35 @@
+<section id="c9-search" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 9 · By hand</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Find the largest without max()</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">largest.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">nums = [34, 78, 12, 91, 56]<br>big = nums[0]<br><span style="color:#F2B33D">for</span> n <span style="color:#F2B33D">in</span> nums:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> n &gt; big:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;big = n<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Largest:"</span>, big)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Largest: 91</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:36px;font-weight:600;line-height:1.35;color:#1B2A41">Exams often say: do not use max().</p>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Guess:</b> the first item is the largest</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Compare:</b> every item with the best so far</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Replace:</b> when you find a bigger one</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 9</p>
+<aside>Trace with a table: big starts 34, sees 78 (bigger, big = 78), 12 (no), 91 (big = 91), 56 (no). Why start with nums[0] and not 0? Because if all numbers are negative, 0 would wrongly win. Same pattern finds the smallest (change &gt; to &lt;) and the position of the largest (also store the index). Linear search is the same loop: for each item, if item == target, print the index and break. Viva: what is linear search? (Checking items one by one.)</aside>
+</section>

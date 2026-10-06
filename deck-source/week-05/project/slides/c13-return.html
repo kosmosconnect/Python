@@ -1,0 +1,28 @@
+<section id="c13-return" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 13 · return</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">print shows it, return hands it back</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">print: only shows</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">def</span> area(l, b):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(l * b)<br><br>x = area(4, 5)<br><span style="color:#F2B33D">print</span>(x + 1)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">20<br>TypeError!</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">return: gives a value</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">def</span> area(l, b):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> l * b<br><br>x = area(4, 5)<br><span style="color:#F2B33D">print</span>(x + 1)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">21</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 5 · Class 13</p>
+<aside>A function with no return gives back None. This is the most important slide of the class. On the left, area prints 20 and then returns None, so x is None and None + 1 crashes. On the right, area returns 20 into x. Analogy: print is a shopkeeper telling you the price; return is the shopkeeper handing you the packet, which you can then use. return also ends the function immediately: any line after it does not run. Viva: difference between print and return? Ask the student to write def square(n): return n * n and use it in print(square(3) + square(4)).</aside>
+</section>

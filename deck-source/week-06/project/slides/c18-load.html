@@ -1,0 +1,30 @@
+<section id="c18-load" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 18 · Step 1</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Loading saved expenses</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">expenses.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">import</span> csv, os<br>FILE = <span style="color:#9FD8A8">"expenses.csv"</span><br><br><span style="color:#F2B33D">def</span> load():<br>&#160;&#160;&#160;&#160;data = []<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> os.path.exists(FILE):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(FILE) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> row <span style="color:#F2B33D">in</span> csv.reader(f):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;data.append(row)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">return</span> data</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>First run:</b> no file yet, so return an empty list</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Later runs:</b> each CSV row becomes a list</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FBEFD5;padding:20px 28px;border-radius:14px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41"><span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">os.path.exists</span> checks first, so a missing file never crashes the program.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 18</p>
+<aside>Each row comes back as a list of 4 strings: ['2026-10-06', 'Food', '40', 'Hostel Maggi']. The amount is a string, so later we use float(row[2]). Test load() on its own: print(load()) should give [] the first time. Next week's try/except gives another way to handle a missing file; both are fine.</aside>
+</section>

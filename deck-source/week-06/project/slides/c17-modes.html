@@ -1,0 +1,46 @@
+<section id="c17-modes" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 17 · Modes</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Opening a file: pick a mode</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;background:#1B2A41;padding:14px 28px;border-radius:14px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">Mode</p>
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">What it does</p>
+</div>
+<div style="display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">"r"</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">read (the default)</p>
+</div>
+<div style="display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">"w"</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">write: erases old text!</p>
+</div>
+<div style="display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">"a"</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">append: add to the end</p>
+</div>
+<div style="display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">"x"</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">create: error if it exists</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">notes.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(<span style="color:#9FD8A8">"notes.txt"</span>, <span style="color:#9FD8A8">"w"</span>) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;f.write(<span style="color:#9FD8A8">"Hello file\n"</span>)</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>with:</b> closes the file for you, even after an error</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>\n:</b> write() does not add a new line: you must</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 17</p>
+<aside>The most dangerous beginner mistake: opening an existing file with "w" wipes its contents immediately, before anything is written. Use "a" to add. The with block is the modern, safe way: older code uses f = open(...) and f.close(), and forgetting close can lose data. The file is created in the folder the program runs from; if the student cannot find it, print os.getcwd(). Viva: difference between w and a modes?</aside>
+</section>

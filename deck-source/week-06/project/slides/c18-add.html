@@ -1,0 +1,23 @@
+<section id="c18-add" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 18 · Step 2</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Adding and saving an expense</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">expenses.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">from</span> datetime <span style="color:#F2B33D">import</span> date<br><br><span style="color:#F2B33D">def</span> add(data):<br>&#160;&#160;&#160;&#160;amt = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Amount: Rs. "</span>)<br>&#160;&#160;&#160;&#160;cat = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Category: "</span>).strip().title()<br>&#160;&#160;&#160;&#160;note = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Note: "</span>)<br>&#160;&#160;&#160;&#160;row = [<span style="color:#F2B33D">str</span>(date.today()), cat, amt, note]<br>&#160;&#160;&#160;&#160;data.append(row)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">with</span> <span style="color:#F2B33D">open</span>(FILE, <span style="color:#9FD8A8">"a"</span>, newline=<span style="color:#9FD8A8">""</span>) <span style="color:#F2B33D">as</span> f:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;csv.writer(f).writerow(row)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Amount: Rs. <span style="color:#B54708">40</span><br>Category: <span style="color:#B54708">food</span><br>Note: <span style="color:#B54708">Hostel Maggi</span></p>
+</div>
+<p style="font-size:30px;line-height:1.5;color:#4A5568">The row goes into the list <b>and</b> onto the disk straight away.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 18</p>
+<aside>Mode "a" adds the row to the end of the file, so old expenses stay. Run it, then open expenses.csv to show the new line. Improvement for the student: check the amount with amt.replace(".", "").isdigit() before saving, and ask again if it is not a number (or use try/except next week).</aside>
+</section>

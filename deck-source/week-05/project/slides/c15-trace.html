@@ -1,0 +1,58 @@
+<section id="c15-trace" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 15 · Tracing</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">What really happens in fact(4)</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column">
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;background:#1B2A41;padding:14px 28px;border-radius:14px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">Call</p>
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#F7F5EF">What it does</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(4)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">4 * fact(3)   waits</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(3)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">3 * fact(2)   waits</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(2)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">2 * fact(1)   waits</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(1)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">1   base case!</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(2)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">2 * 1 = 2</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(3)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">3 * 2 = 6</p>
+</div>
+<div style="display:grid;grid-template-columns:200px 1fr;gap:24px;align-items:center;padding:14px 28px;border-bottom:2px solid #D9DEE5">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#2A64A3">fact(4)</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41">4 * 6 = 24</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Going down:</b> each call waits for a smaller one</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Base case:</b> the first real answer</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Coming back:</b> each waiting call finishes its multiply</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 5 · Class 15</p>
+<aside>Draw this as a staircase going down then up, or as a stack of plates: each new call is a plate on top, and plates are removed from the top. That is why it is called the call stack. Every waiting call keeps its own n (a local variable): there are four different n's alive at the same time. Exam questions often ask to trace a recursive function's output, so practise with fact(3) and a sum function: def s(n): return 0 if n == 0 else n + s(n - 1).</aside>
+</section>

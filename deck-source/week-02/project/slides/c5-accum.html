@@ -1,0 +1,34 @@
+<section id="c5-accum" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 5 · Accumulators</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Adding up and multiplying in a loop</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">sum_fact.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">n = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"n: "</span>))<br>total = 0<br>fact = 1<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(1, n + 1):<br>&#160;&#160;&#160;&#160;total += i<br>&#160;&#160;&#160;&#160;fact *= i<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Sum ="</span>, total)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Factorial ="</span>, fact)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">n: <span style="color:#B54708">5</span><br>Sum = 15<br>Factorial = 120</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Start:</b> <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">total = 0</span>, <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">fact = 1</span> before the loop</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Grow:</b> add or multiply one value each round</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #B54708;padding:20px 28px;border-radius:14px">
+<x-icon name="Warning" style="color:#B54708;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Start <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">fact</span> at 0 and the answer is always 0!</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 5</p>
+<aside>An accumulator is a variable that collects a result round by round, like a piggy bank. Trace n = 5 on paper: i = 1: total 1, fact 1; i = 2: total 3, fact 2; i = 3: total 6, fact 6; i = 4: total 10, fact 24; i = 5: total 15, fact 120. Ask why range(1, n + 1) and not range(1, n). (The stop is never included.) Ask why fact starts at 1. (1 is the "do nothing" value for multiplying, like 0 is for adding.) Common bug: putting print inside the loop, which prints a running total every round. Check the sum with the formula n * (n + 1) // 2. Viva: what is 0 factorial? (1.) Variation: sum of only even numbers up to n, using range(2, n + 1, 2).</aside>
+</section>

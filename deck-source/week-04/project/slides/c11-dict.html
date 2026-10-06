@@ -1,0 +1,34 @@
+<section id="c11-dict" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 11 · Dictionaries</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Dictionaries: look things up by name</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.15fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">student.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">student = {<span style="color:#9FD8A8">"name"</span>: <span style="color:#9FD8A8">"Subham"</span>,<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#9FD8A8">"roll"</span>: 21,<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#9FD8A8">"city"</span>: <span style="color:#9FD8A8">"Cuttack"</span>}<br><span style="color:#F2B33D">print</span>(student[<span style="color:#9FD8A8">"name"</span>])<br>student[<span style="color:#9FD8A8">"cgpa"</span>] = 8.4<br>student[<span style="color:#9FD8A8">"city"</span>] = <span style="color:#9FD8A8">"Puri"</span><br><span style="color:#F2B33D">print</span>(student[<span style="color:#9FD8A8">"city"</span>], <span style="color:#F2B33D">len</span>(student))</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Subham<br>Puri 4</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Pairs:</b> each item is <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">key: value</span> inside { }</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Look up:</b> by key, not by position</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Same key:</b> updates. A new key adds a pair</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 11</p>
+<aside>Analogy: a real dictionary or a phone book, where you look up a word (key) to get its meaning (value). Keys must be unique and are usually strings; values can be anything, even lists. Line 5 adds a new pair, line 6 changes an existing one. Show the KeyError from student["age"], then the safe way, student.get("age"), which gives None, or student.get("age", 0). Viva: can two keys be the same? (No, the second one overwrites the first.)</aside>
+</section>

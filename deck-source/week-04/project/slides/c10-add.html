@@ -1,0 +1,34 @@
+<section id="c10-add" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 10 · Matrix addition</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Adding two matrices</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">matrix_add.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">A = [[1, 2], [3, 4]]<br>B = [[5, 6], [7, 8]]<br>C = []<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(2):<br>&#160;&#160;&#160;&#160;row = []<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">for</span> j <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(2):<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;row.append(A[i][j] + B[i][j])<br>&#160;&#160;&#160;&#160;C.append(row)<br><span style="color:#F2B33D">print</span>(C)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41"><span style="color:#B54708">6, 8], [10, 12</span></p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Each row:</b> starts as an empty list</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Each cell:</b> is <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">A[i][j] + B[i][j]</span></p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Finished row:</b> is appended to C</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 10</p>
+<aside>Do the addition by hand first: add matching cells. Then trace i = 0: j = 0 gives 6, j = 1 gives 8, so row [6, 8] goes into C. Transpose (rows become columns) uses the same loops with T[j][i] = m[i][j], or row.append(m[j][i]) when building row i. Matrix multiplication is a three-loop program: show it only if the student's lab list includes it. Common bug: creating row = [] outside the outer loop, which glues all rows together.</aside>
+</section>

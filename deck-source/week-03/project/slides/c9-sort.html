@@ -1,0 +1,28 @@
+<section id="c9-sort" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 9 · Sorting</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Putting a list in order</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">sort(): changes the list</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">nums = [34, 12, 91]<br>nums.sort()<br><span style="color:#F2B33D">print</span>(nums)<br>nums.sort(reverse=<span style="color:#F2B33D">True</span>)<br><span style="color:#F2B33D">print</span>(nums)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">[12, 34, 91]<br>[91, 34, 12]</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">sorted(): makes a new list</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">nums = [34, 12, 91]<br>new = <span style="color:#F2B33D">sorted</span>(nums)<br><span style="color:#F2B33D">print</span>(new)<br><span style="color:#F2B33D">print</span>(nums)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">[12, 34, 91]<br>[34, 12, 91]</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 9</p>
+<aside>sort() is a list method and changes the list; sorted() is a function, works on any collection (even a string) and leaves the original alone. Strings sort alphabetically: ["Puri", "Cuttack", "Angul"] becomes ["Angul", "Cuttack", "Puri"]. Capital letters come before small ones. Other useful ones: nums.reverse() and nums[::-1]. If the exam asks for a sorting algorithm (bubble sort), that comes in Week 8 revision; for now use the built-ins.</aside>
+</section>

@@ -1,0 +1,34 @@
+<section id="c12-menu" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 12 · Step 1</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">The menu loop</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.45fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">records.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">students = {}<br>MENU = <span style="color:#9FD8A8">"1 Add&#160;&#160;2 Show&#160;&#160;3 Find&#160;&#160;4 Top&#160;&#160;0 Exit"</span><br><span style="color:#F2B33D">while</span> <span style="color:#F2B33D">True</span>:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(MENU)<br>&#160;&#160;&#160;&#160;choice = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Choice: "</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> choice == <span style="color:#9FD8A8">"1"</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"add a student"</span>)<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">elif</span> choice == <span style="color:#9FD8A8">"0"</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Bye!"</span>)<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">break</span><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">else</span>:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Invalid choice"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Choice: <span style="color:#B54708">7</span><br>Invalid choice<br>Choice: <span style="color:#B54708">0</span><br>Bye!</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Repeat:</b> <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">while True</span> shows the menu again and again</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Branch:</b> one elif per choice</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Exit:</b> <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">break</span> on 0</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 4 · Class 12</p>
+<aside>Build and run this skeleton first, before any feature works. The placeholder print for choice 1 is replaced in the next step. This is how real programmers work: a running skeleton, then one feature at a time. Choices stay strings ("1" not 1), so typing letters cannot crash the program. Ask: what happens if we forget break? (The program never ends.) Add elif branches for 2, 3 and 4 with placeholders too.</aside>
+</section>

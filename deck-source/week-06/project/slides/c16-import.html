@@ -1,0 +1,41 @@
+<section id="c16-import" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 16 · import</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Three ways to bring in a module</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Whole module</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">import</span> math<br><span style="color:#F2B33D">print</span>(math.sqrt(49))</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">7.0</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">Just one name</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">from</span> math <span style="color:#F2B33D">import</span> pi<br><span style="color:#F2B33D">print</span>(pi)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">3.141592653589793</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">A short nickname</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">import</span> random <span style="color:#F2B33D">as</span> r<br><span style="color:#F2B33D">print</span>(r.randint(1, 6))</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#F7F5EF;border:2px solid #D9DEE5;padding:16px 24px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">4&#160;&#160;(changes every run)</p>
+</div>
+</div>
+</div>
+<div style="display:flex;gap:32px;align-items:center;background:#FBEFD5;padding:32px 48px;border-radius:24px">
+<x-icon name="Lightbulb" style="color:#8A5A00;width:56px;height:56px"></x-icon>
+<p style="font-size:30px;line-height:1.5;color:#1B2A41">Put all <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">import</span> lines at the top of the file. <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">help(math)</span> lists everything inside a module.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 6 · Class 16</p>
+<aside>Style 1 is the clearest: math.sqrt tells the reader where sqrt comes from. Style 2 is handy for one or two names. Style 3 is common for long names (import numpy as np is famous). Avoid from math import *: it dumps every name in and can hide your own variables. Show dir(math) in the shell for a list of names. Viva: what is a module? (A .py file with functions and variables you can import.) What is a package? (A folder of modules.)</aside>
+</section>

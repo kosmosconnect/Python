@@ -1,0 +1,30 @@
+<section id="c9-loop" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 9 · Looping</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Total and average of marks</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">average.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">marks = []<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(5):<br>&#160;&#160;&#160;&#160;m = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Marks: "</span>))<br>&#160;&#160;&#160;&#160;marks.append(m)<br>total = <span style="color:#F2B33D">sum</span>(marks)<br>avg = total / <span style="color:#F2B33D">len</span>(marks)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Marks:"</span>, marks)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">f"Average: {avg:.1f}"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Marks: <span style="color:#B54708">78</span><br>Marks: <span style="color:#B54708">92</span><br>… 3 more …<br>Marks: [78, 92, 65, 88, 71]<br>Average: 78.8</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Fill:</b> start with <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">[]</span>, then <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">append</span> in a loop</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Use:</b> <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">sum()</span>, <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">len()</span>, <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">max()</span>, <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">min()</span></p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 3 · Class 9</p>
+<aside>This is the standard way to read n values into a list. Show the one-line alternative for strong students: marks = [int(x) for x in input().split()] reads all marks on one line (list comprehensions come next week). Ask: how do you find how many students scored above the average? (Loop again and count.) Built-ins sum, max, min and len work on any list of numbers. Also show for m in marks: print(m) to loop through items.</aside>
+</section>

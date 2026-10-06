@@ -1,0 +1,34 @@
+<section id="c14-sort" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 14 · Sorting with a key</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Sorting students by marks</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">rank.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">marks = {<span style="color:#9FD8A8">"Ananya"</span>: 92, <span style="color:#9FD8A8">"Subham"</span>: 78,<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#9FD8A8">"Priyanka"</span>: 88}<br>ranked = <span style="color:#F2B33D">sorted</span>(marks.items(),<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;key=<span style="color:#F2B33D">lambda</span> p: p[1],<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;reverse=<span style="color:#F2B33D">True</span>)<br><span style="color:#F2B33D">for</span> rank, (name, m) <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">enumerate</span>(ranked, 1):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(rank, name, m)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">1 Ananya 92<br>2 Priyanka 88<br>3 Subham 78</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>items():</b> gives (name, marks) pairs</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>key:</b> says what to sort by: <span style="font-family:'JetBrains Mono', 'Courier New', monospace;color:#2A64A3">p[1]</span>, the marks</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>enumerate:</b> counts 1, 2, 3 for the rank</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 5 · Class 14</p>
+<aside>Build it up in the shell: marks.items() gives pairs; sorted(marks.items()) sorts by name (the first item of each pair); adding key=lambda p: p[1] sorts by marks instead. reverse=True puts the highest first. key works with any function: sorted(names, key=len) sorts words by length. enumerate(list, 1) gives a counter starting at 1 together with each item; it is handy for numbered menus too.</aside>
+</section>

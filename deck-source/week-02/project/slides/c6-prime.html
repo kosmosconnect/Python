@@ -1,0 +1,34 @@
+<section id="c6-prime" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 6 · Prime numbers</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Is the number prime?</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">prime.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">n = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Number: "</span>))<br>is_prime = n &gt; 1<br><span style="color:#F2B33D">for</span> i <span style="color:#F2B33D">in</span> <span style="color:#F2B33D">range</span>(2, n):<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">if</span> n % i == 0:<br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;is_prime = <span style="color:#F2B33D">False</span><br>&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#F2B33D">break</span><br><span style="color:#F2B33D">if</span> is_prime:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(n, <span style="color:#9FD8A8">"is prime"</span>)<br><span style="color:#F2B33D">else</span>:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(n, <span style="color:#9FD8A8">"is not prime"</span>)</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 40px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = what the user types</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Number: <span style="color:#B54708">29</span><br>29 is prime</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Assume:</b> it is prime (0 and 1 never are)</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Search:</b> try every divisor from 2 to n - 1</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Found one?:</b> not prime, and break: no need to look further</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 6</p>
+<aside>A prime has exactly two factors: 1 and itself. is_prime = n &gt; 1 gives False for 0 and 1 and True for everything else, so the loop only has to prove it wrong. This True/False variable is called a flag. Test 29 (prime), 21 (3 x 7), 2 (the only even prime: the loop does not run at all), and 1. Speed-up for strong students: check i only up to int(n ** 0.5) + 1, because factors come in pairs. Python also has for ... else, which runs the else when no break happened: show it only if the student is curious. Homework link: print all primes from 1 to 50 with a nested loop.</aside>
+</section>

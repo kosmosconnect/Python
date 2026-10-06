@@ -8,6 +8,7 @@ Teaching kit for an 8-week, 24-class Python course for one B.Tech 1st-year stude
 - `Week-NN_<Topic>/code/`: every program shown on that week's slides, runnable, named `classNN_<topic>.py`.
 - `Week-NN_<Topic>/solutions/`: answers to the practice slides.
 - `Week-NN_<Topic>/teacher-notes.md`: generated from the slides' `<aside>` notes with `python tools/make_notes.py N`. Do not hand-edit.
+- `Week-NN_<Topic>/Week-NN-slides.pptx`: PowerPoint export of that week's online deck (the teacher exports it from Share › Export). Re-export after changing a deck.
 - `deck-source/week-NN/project/`: source of that week's online Slides artifact (`deck.json` plus `slides/<id>.html`). This folder is the `root` when publishing to that week's artifact.
 
 ## Slide decks (claude.ai Slides artifacts)
@@ -15,9 +16,15 @@ Teaching kit for an 8-week, 24-class Python course for one B.Tech 1st-year stude
 | Week | Artifact | State |
 |------|----------|-------|
 | 1 | https://claude.ai/artifact/XPWS2SXfGJycbMLsRo4zR7 | complete, 26 slides |
-| 2 | https://claude.ai/artifact/3D9WVoacF9Joc5nCBBHQvc | in progress |
+| 2 | https://claude.ai/artifact/3D9WVoacF9Joc5nCBBHQvc | complete, 26 slides |
+| 3 | https://claude.ai/artifact/4Nr3YYsXDky9QTbHxCo5CK | complete, 23 slides |
+| 4 | https://claude.ai/artifact/BfEUvTiMxf5czDCZwSsj5p | complete, 23 slides |
+| 5 | https://claude.ai/artifact/C4K3Jtwx6SnFdZaevQbbTe | complete, 23 slides |
+| 6 | https://claude.ai/artifact/PAf5yhFnixkAumUkhSnbFd | complete, 22 slides |
+| 7 | https://claude.ai/artifact/Sr5Lfg8H3dYLBC1LurWSfe | complete, 23 slides |
+| 8 | https://claude.ai/artifact/4KZu1r4muw2SU1WLhirShB | complete, 22 slides |
 
-To change a deck, edit files under `deck-source/week-NN/project/` and publish only the changed files to that week's URL with `root` = `deck-source/week-NN`. The teacher may edit slides in the browser; if a publish is refused, re-read the named file from the artifact and redo the edit on it. Weeks 3–8 each get a new deck made from the Slides artifact type.
+To change a deck, edit files under `deck-source/week-NN/project/` and publish only the changed files to that week's URL with `root` = `deck-source/week-NN`. The teacher may edit slides in the browser; if a publish is refused, re-read the named file from the artifact and redo the edit on it.
 
 ## Style (keep every deck consistent)
 
@@ -31,6 +38,7 @@ To change a deck, edit files under `deck-source/week-NN/project/` and publish on
 
 ## Status and next steps
 
-- Week 1 (Classes 1–3): done, including its code, solutions and teacher notes.
-- Week 2 (Classes 4–6): Class 4 slides done; Class 5 has `c5`, `c5-why`, `c5-while`, `c5-for`. Still to write: `c5-accum`, `c5-digits`, `c5-break`, `c5-try`, `c6` through `c6-try`, and `wrap` (their ids are already in `deck.json` `order`). Then the `Week-02_Decisions-and-Loops` folder (code, solutions, notes).
-- Weeks 3–8: follow the topics in the README table.
+- All 8 weeks are complete: slides, `code/`, `solutions/` and `teacher-notes.md` for every class. Every program has been run and its output matches the slides.
+- Mini-projects: Week 4 `class12_records.py` (rebuilt with functions in Week 5 `class14_records_functions.py`), Week 6 `class18_expenses.py`. Capstone: Week 8 `class22_library.py`.
+- Weeks 2–8 slides were generated with a consistent set of layouts (code + output panel, card rows, two-column tables, practice, recap). When editing, keep the same markup patterns and the 24px minimum text size.
+- Possible next steps: match topics to the student's official ITER lab list if the teacher shares it; add a printable question bank.
