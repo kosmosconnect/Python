@@ -1,0 +1,36 @@
+<section id="c4-leap" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 4 · Lab classic</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Is it a leap year?</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:32px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Divisible by 4: <b>leap year</b></p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">…except centuries (divisible by 100): <b>not leap</b></p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">…unless divisible by 400: <b>leap again</b></p>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:16px">
+<div style="display:flex;flex-direction:column;gap:4px;background:#E6EEF7;padding:20px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">2024</p><p style="font-size:24px;font-weight:600;color:#2A64A3">Leap</p></div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#E6EEF7;padding:20px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">1900</p><p style="font-size:24px;font-weight:600;color:#B54708">Not leap</p></div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#E6EEF7;padding:20px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">2000</p><p style="font-size:24px;font-weight:600;color:#2A64A3">Leap</p></div>
+<div style="display:flex;flex-direction:column;gap:4px;background:#E6EEF7;padding:20px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">2026</p><p style="font-size:24px;font-weight:600;color:#B54708">Not leap</p></div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 44px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">leap.py · check the rarest case first</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">year = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Year: "</span>))<br><span style="color:#F2B33D">if</span> year % 400 == 0:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Leap year"</span>)<br><span style="color:#F2B33D">elif</span> year % 100 == 0:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Not a leap year"</span>)<br><span style="color:#F2B33D">elif</span> year % 4 == 0:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Leap year"</span>)<br><span style="color:#F2B33D">else</span>:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Not a leap year"</span>)</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 4</p>
+<aside>Explain the real-world reason first: a year is about 365.24 days, so we add a day every 4 years, but that over-corrects slightly, so century years skip it, except every 400 years. The elif ladder checks the rarest case (400) first, which is why the order works. Show the one-line version too, because textbooks use it: if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0. Test all four sample years with the student. Viva question: "Why is 1900 not a leap year but 2000 is?"</aside>
+</section>

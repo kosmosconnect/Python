@@ -1,0 +1,38 @@
+<section id="c5-while" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 5 · while loop</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">The while loop has three parts</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 44px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">count.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">count = 1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># 1. start</span><br><span style="color:#F2B33D">while</span> count &lt;= 5:&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># 2. condition</span><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(count, end=<span style="color:#9FD8A8">" "</span>)<br>&#160;&#160;&#160;&#160;count += 1&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># 3. update</span><br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Done!"</span>)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 44px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">1 2 3 4 5 Done!</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">1</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Start:</b> create the counter before the loop</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">2</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Condition:</b> checked before every round. False means stop</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:16px 24px;border-radius:14px">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;width:52px;text-align:center;border-radius:999px">3</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Update:</b> change the counter inside the loop</p>
+</div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #B54708;padding:20px 24px;border-radius:14px">
+<x-icon name="Warning" style="color:#B54708;width:48px;height:48px"></x-icon>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Forget step 3 and the loop never ends. Press <b>Ctrl + C</b> to stop it.</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 5</p>
+<aside>Trace the loop on paper with a table: count = 1, is 1 &lt;= 5? yes, print 1, count becomes 2... until count = 6, when 6 &lt;= 5 is False and the loop stops. That is 5 rounds. Then delete the count += 1 line and run it: the student sees the infinite loop and learns Ctrl + C. Ask: what is the value of count after the loop ends? (6, a classic exam question.) Variation: change it to count down from 5 to 1 (start at 5, condition count &gt;= 1, update count -= 1).</aside>
+</section>

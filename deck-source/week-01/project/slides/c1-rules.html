@@ -1,0 +1,35 @@
+<section id="c1-rules" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 1 · Avoiding errors</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Four golden rules of Python</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:28px">
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px 36px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">1. Capital letters matter</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 28px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Hi"</span>)&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># works</span><br>Print(<span style="color:#9FD8A8">"Hi"</span>)&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># NameError</span></p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px 36px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">2. Quotes must match</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 28px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Hi"</span>)&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># works</span><br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Hi')</span>&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># SyntaxError</span></p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px 36px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">3. No random spaces at the start</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 28px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Hi"</span>)&#160;&#160;&#160;&#160;&#160;&#160;<span style="color:#8FA3B8"># works</span><br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Hi"</span>)&#160;&#160;<span style="color:#8FA3B8"># IndentationError</span></p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#FFFDF8;border:2px solid #E2DED3;padding:32px 36px;border-radius:20px">
+<h3 style="font-size:36px;font-weight:700;line-height:1.2;color:#1B2A41">4. # starts a comment</h3>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:20px 28px;border-radius:14px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#8FA3B8"># Python skips this line</span><br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Hi"</span>)&#160;&#160;<span style="color:#8FA3B8"># and this part</span></p>
+</div>
+</div>
+</div>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Errors are normal.</b> Read the last line of the error message: it names the problem and the line number.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 1 · Class 1</p>
+<aside>Make errors on purpose, live, and read the messages together. This removes the fear of red text. Rule 1: Python is case-sensitive, so Print is an unknown name (NameError). Rule 2: a string must open and close with the same quote type (SyntaxError). Rule 3: spaces at the start of a line have meaning in Python; we will use them for if and loops next week. For now, never indent without a reason (IndentationError). Rule 4: comments start with # and are notes for humans. Viva question: "What is a comment and why do we use it?"</aside>
+</section>

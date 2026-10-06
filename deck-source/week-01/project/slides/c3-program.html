@@ -1,0 +1,30 @@
+<section id="c3-program" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 3 · Putting it together</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Program: simple interest calculator</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:32px 44px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">interest.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3"><span style="color:#8FA3B8"># Simple interest calculator</span><br>p = <span style="color:#F2B33D">float</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Principal (Rs.): "</span>))<br>r = <span style="color:#F2B33D">float</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Rate (% per year): "</span>))<br>t = <span style="color:#F2B33D">float</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Time (years): "</span>))<br>si = p * r * t / 100<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">f"Simple interest = Rs. {si:.2f}"</span>)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">f"Total amount = Rs. {p + si:.2f}"</span>)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:24px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:32px 44px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output · orange = typed</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Principal (Rs.): <span style="color:#B54708">50000</span><br>Rate (% per year): <span style="color:#B54708">7.5</span><br>Time (years): <span style="color:#B54708">2</span><br>Simple interest = Rs. 7500.00<br>Total amount = Rs. 57500.00</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px;background:#E6EEF7;padding:28px 32px;border-radius:20px">
+<div style="display:flex;gap:12px;align-items:center">
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 20px;border-radius:999px">Input</p>
+<x-shape kind="arrow-right" style="background:#2A64A3;width:40px;height:20px"></x-shape>
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 20px;border-radius:999px">Process</p>
+<x-shape kind="arrow-right" style="background:#2A64A3;width:40px;height:20px"></x-shape>
+<p style="font-size:30px;font-weight:700;color:#1B2A41;background:#F2B33D;padding:6px 20px;border-radius:999px">Output</p>
+</div>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Almost every program follows this pattern</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 1 · Class 3</p>
+<aside>This is a typical first lab program. Build it step by step with the student: first the three inputs, then the formula, then the output. Explain the IPO model: Input (read p, r, t), Process (si = p * r * t / 100), Output (print the results). Ask the student to label each line of the program as I, P or O. Why float() and not int()? Because the rate can be 7.5. Extension challenge: change it to compound interest: amount = p * (1 + r / 100) ** t. For 50000 at 7.5% for 2 years, the amount is Rs. 57781.25.</aside>
+</section>

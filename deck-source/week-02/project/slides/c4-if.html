@@ -1,0 +1,33 @@
+<section id="c4-if" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 4 · The if statement</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Your first if</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:32px 44px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">pass.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">marks = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Marks: "</span>))<br><span style="color:#F2B33D">if</span> marks &gt;= 40:<br>&#160;&#160;&#160;&#160;<span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Pass! Well done"</span>)<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Result checked"</span>)</p>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 32px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Run 1</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Marks: <span style="color:#B54708">72</span><br>Pass! Well done<br>Result checked</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 32px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Run 2</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Marks: <span style="color:#B54708">25</span><br>Result checked</p>
+</div>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;gap:20px;align-items:start"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#2A64A3;width:200px">if</p><p style="font-size:30px;line-height:1.4;color:#4A5568">The keyword that starts a decision</p></div>
+<div style="display:flex;gap:20px;align-items:start"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#2A64A3;width:200px">marks&gt;=40</p><p style="font-size:30px;line-height:1.4;color:#4A5568">The condition: True or False</p></div>
+<div style="display:flex;gap:20px;align-items:start"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#2A64A3;width:200px">:</p><p style="font-size:30px;line-height:1.4;color:#4A5568">A colon ends the line. Never forget it!</p></div>
+<div style="display:flex;gap:20px;align-items:start;background:#FBEFD5;padding:16px 20px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#8A5A00;width:180px">4 spaces</p><p style="font-size:30px;line-height:1.4;color:#1B2A41">Indented lines run only when the condition is True</p></div>
+<div style="display:flex;gap:20px;align-items:start"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#2A64A3;width:200px">no indent</p><p style="font-size:30px;line-height:1.4;color:#4A5568">Back outside the if: runs every time</p></div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 4</p>
+<aside>This is where indentation finally matters. In C you use { } to group lines; in Python you use indentation (4 spaces, IDLE and VS Code add them automatically after the colon). Run the program twice, with 72 and with 25, so the student sees the indented line being skipped. Common errors to show: forgetting the colon (SyntaxError: expected ':'), and forgetting to indent (IndentationError: expected an indented block). Viva question: "How does Python know which lines belong to an if?" By the indentation.</aside>
+</section>

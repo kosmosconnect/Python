@@ -1,0 +1,34 @@
+<section id="c3-fstring" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 3 · Neat output</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">f-strings: fill in the blanks</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 44px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">report.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">name = <span style="color:#9FD8A8">"Priyanka"</span><br>marks = 437<br>total = 500<br>pct = marks / total * 100<br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">f"{name} scored {pct:.2f}%"</span>)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:28px 44px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Priyanka scored 87.40%</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#2A64A3">f"..."</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">An f before the quote means: this text has blanks to fill</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FFFDF8;border:2px solid #E2DED3;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#2A64A3">{name}</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">Curly braces are the blanks. Put a variable or a sum inside</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#FBEFD5;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#8A5A00">{pct:.2f}</p>
+<p style="font-size:30px;line-height:1.4;color:#1B2A41">Show exactly 2 digits after the decimal point</p>
+</div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 1 · Class 3</p>
+<aside>Show the "old way" first: print(name, "scored", pct, "%") gives "Priyanka scored 87.4 %" with an extra space, and long decimals can look messy. Then show the f-string version. Analogy: an f-string is like a form with blanks ("Name: ____, Marks: ____") that Python fills in for you. Try variations live: {pct:.1f} gives 87.4, {pct:.0f} gives 87, and {marks + 10} works too, since any expression can go inside the braces. From now on, use f-strings for all output in lab programs; it looks professional.</aside>
+</section>

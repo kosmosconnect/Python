@@ -1,0 +1,20 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-06T12:30:00Z"},
+  "lists": "css",
+  "title": "Python Week 1 – Getting Started",
+  "cover": "cover",
+  "order": ["cover", "roadmap", "c1", "c1-program", "c1-why", "c1-run", "c1-setup", "c1-first", "c1-rules", "c1-try", "c2", "c2-box", "c2-names", "c2-types", "c2-input", "c2-cast", "c2-try", "c3", "c3-arith", "c3-mod", "c3-compare", "c3-bodmas", "c3-fstring", "c3-program", "c3-try", "wrap"],
+  "sections": {
+    "s0": {"description": "Welcome and the 8-week roadmap", "start": "cover"},
+    "s1": {"description": "Class 1 — what programming is, setting up Python, first program", "start": "c1"},
+    "s2": {"description": "Class 2 — variables, data types, input and type casting", "start": "c2"},
+    "s3": {"description": "Class 3 — operators, BODMAS, f-strings and a full program", "start": "c3"},
+    "s4": {"description": "Week 1 recap and what comes next", "start": "wrap"}
+  },
+  "faces": {
+    "rubik": {"family": "Rubik", "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"}
+  },
+  "designSystems": []
+}

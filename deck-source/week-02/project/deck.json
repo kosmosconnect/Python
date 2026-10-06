@@ -1,0 +1,20 @@
+{
+  "v": 4,
+  "createdOnFiles": {"v": 1, "at": "2026-10-06T13:45:00Z"},
+  "lists": "css",
+  "title": "Python Week 2 – Decisions & Loops",
+  "cover": "cover",
+  "order": ["cover", "c4", "c4-idea", "c4-if", "c4-else", "c4-elif", "c4-largest", "c4-leap", "c4-try", "c5", "c5-why", "c5-while", "c5-for", "c5-accum", "c5-digits", "c5-break", "c5-try", "c6", "c6-nested", "c6-star", "c6-pyramid", "c6-number", "c6-prime", "c6-fib", "c6-try", "wrap"],
+  "sections": {
+    "s0": {"description": "Week 2 cover", "start": "cover"},
+    "s1": {"description": "Class 4 — if, else, elif and classic decision programs", "start": "c4"},
+    "s2": {"description": "Class 5 — while and for loops, range, accumulators, digits, break and continue", "start": "c5"},
+    "s3": {"description": "Class 6 — nested loops, star and number patterns, primes and Fibonacci", "start": "c6"},
+    "s4": {"description": "Week 2 recap and what comes next", "start": "wrap"}
+  },
+  "faces": {
+    "rubik": {"family": "Rubik", "href": "https://fonts.googleapis.com/css2?family=Rubik:wght@400..700&display=swap"},
+    "jetbrains-mono": {"family": "JetBrains Mono", "href": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap"}
+  },
+  "designSystems": []
+}

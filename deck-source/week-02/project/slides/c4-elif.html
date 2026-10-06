@@ -1,0 +1,27 @@
+<section id="c4-elif" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 4 · elif ladder</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">Many roads: the grade calculator</h2>
+</div>
+<div style="display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:12px;background:#1B2A41;padding:28px 44px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;color:#8FA3B8">grade.py</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.4;color:#E8EDF3">marks = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Marks: "</span>))<br><span style="color:#F2B33D">if</span> marks &gt;= 90:<br>&#160;&#160;&#160;&#160;grade = <span style="color:#9FD8A8">"A+"</span><br><span style="color:#F2B33D">elif</span> marks &gt;= 75:<br>&#160;&#160;&#160;&#160;grade = <span style="color:#9FD8A8">"A"</span><br><span style="color:#F2B33D">elif</span> marks &gt;= 60:<br>&#160;&#160;&#160;&#160;grade = <span style="color:#9FD8A8">"B"</span><br><span style="color:#F2B33D">elif</span> marks &gt;= 40:<br>&#160;&#160;&#160;&#160;grade = <span style="color:#9FD8A8">"C"</span><br><span style="color:#F2B33D">else</span>:<br>&#160;&#160;&#160;&#160;grade = <span style="color:#9FD8A8">"F"</span><br><span style="color:#F2B33D">print</span>(<span style="color:#9FD8A8">"Grade:"</span>, grade)</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">How Python reads it when marks = 82</p>
+<div style="display:flex;flex-direction:column;gap:12px">
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:12px 24px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#1B2A41;width:300px">82 &gt;= 90 ?</p><p style="font-size:30px;color:#4A5568">No, move down</p></div>
+<div style="display:flex;gap:20px;align-items:center;background:#F2B33D;padding:12px 24px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41;width:300px">82 &gt;= 75 ?</p><p style="font-size:30px;font-weight:700;color:#1B2A41">Yes: grade = "A"</p></div>
+<div style="display:flex;gap:20px;align-items:center;background:#FFFDF8;border:2px solid #E2DED3;padding:12px 24px;border-radius:14px"><p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;color:#5F6B7A;width:300px">the rest</p><p style="font-size:30px;color:#5F6B7A">Skipped entirely</p></div>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FFFDF8;border:2px solid #D9DEE5;padding:24px 32px;border-radius:20px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Output</p>
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Marks: <span style="color:#B54708">82</span><br>Grade: A</p>
+</div>
+<p style="font-size:30px;line-height:1.4;color:#4A5568"><b>Rule:</b> checks top to bottom and stops at the first True. else catches whatever is left.</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 2 · Class 4</p>
+<aside>elif means "else if". Trace the ladder for 82 together, then ask the student to trace 95, 60, 39 and 40. Ask why we do not need marks &gt;= 75 and marks &lt; 90 in the second line. (If we reach that line, marks is already less than 90.) Common bug: writing the ladder in the wrong order, starting with marks &gt;= 40, so 95 would get a C. Order matters: biggest condition first. The grades here are just an example; adjust the cut-offs to whatever your university's grading uses.</aside>
+</section>

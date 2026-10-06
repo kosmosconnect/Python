@@ -1,0 +1,46 @@
+<section id="c2-cast" style="background:#F7F5EF;color:#1B2A41;font-family:'Rubik', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:12px">
+<p style="font-size:24px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">Class 2 · Type casting</p>
+<h2 style="font-size:64px;font-weight:700;line-height:1.1;color:#1B2A41">The input() trap, and the fix</h2>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#B54708">The problem</p>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">age = <span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Age: "</span>)<br><span style="color:#F2B33D">print</span>(age + 1)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FFFDF8;border:2px solid #B54708;padding:24px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:24px;line-height:1.5;color:#B54708">TypeError: can only concatenate str (not "int") to str</p>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#2A64A3">The fix: convert with int()</p>
+<div style="display:flex;flex-direction:column;background:#1B2A41;padding:28px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#E8EDF3">age = <span style="color:#F2B33D">int</span>(<span style="color:#F2B33D">input</span>(<span style="color:#9FD8A8">"Age: "</span>))<br><span style="color:#F2B33D">print</span>(age + 1)</p>
+</div>
+<div style="display:flex;flex-direction:column;background:#FFFDF8;border:2px solid #2A64A3;padding:24px 40px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;line-height:1.5;color:#1B2A41">Age: <span style="color:#B54708">18</span><br>19</p>
+</div>
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:24px">
+<div style="display:flex;flex-direction:column;gap:8px;background:#E6EEF7;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">int("25")</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">gives 25</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E6EEF7;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">float("8.5")</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">gives 8.5</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E6EEF7;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">str(100)</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">gives "100"</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;background:#E6EEF7;padding:24px 32px;border-radius:20px">
+<p style="font-family:'JetBrains Mono', 'Courier New', monospace;font-size:30px;font-weight:700;color:#1B2A41">int(9.99)</p>
+<p style="font-size:30px;line-height:1.4;color:#4A5568">gives 9 (chops, no rounding)</p>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#5F6B7A">Python Programming · Week 1 · Class 2</p>
+<aside>Show the error first and let the student read it. "concatenate" means joining strings together: Python sees "18" + 1 and cannot join text with a number. Fix: wrap input() in int() for whole numbers or float() for decimals. Read int(input("Age: ")) from the inside out: input() runs first and gives "18", then int() turns it into 18. Extra demos: int("abc") gives ValueError; int("8.5") also gives ValueError (use float first). Viva question: "What is type casting?" Converting a value from one type to another.</aside>
+</section>
