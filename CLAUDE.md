@@ -8,7 +8,8 @@ Teaching kit for an 8-week, 24-class Python course for one B.Tech 1st-year stude
 - `Week-NN_<Topic>/code/`: every program shown on that week's slides, runnable, named `classNN_<topic>.py`.
 - `Week-NN_<Topic>/solutions/`: answers to the practice slides.
 - `Week-NN_<Topic>/teacher-notes.md`: generated from the slides' `<aside>` notes with `python tools/make_notes.py N`. Do not hand-edit.
-- `Week-NN_<Topic>/Week-NN-slides.pptx`: PowerPoint export of that week's online deck (the teacher exports it from Share › Export). Re-export after changing a deck.
+- `Week-NN_<Topic>/Week-NN-slides.pptx`: PowerPoint copy of that week's online deck. Weeks 2–8 were exported from Share › Export; Week 1 was built with `python tools/build_pptx.py 1`, which lays the slides out in Chrome and writes editable PowerPoint shapes. Re-export (or rebuild) after changing a deck.
+- `fonts/`: Rubik and JetBrains Mono `.ttf` files (OFL). `tools/build_pptx.py` embeds them for layout; the teacher installs them so PowerPoint shows the right fonts.
 - `deck-source/week-NN/project/`: source of that week's online Slides artifact (`deck.json` plus `slides/<id>.html`). This folder is the `root` when publishing to that week's artifact.
 
 ## Slide decks (claude.ai Slides artifacts)

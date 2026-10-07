@@ -53,5 +53,7 @@ Programs that read or write files (Weeks 6 and 8) create them in the folder you 
 
 ## Other folders
 
+- `fonts/` holds the two fonts the slides use, Rubik and JetBrains Mono (free, OFL licence). Install them on any laptop where you open the PowerPoint copies: select the four `.ttf` files, right-click, **Install**. Without them PowerPoint swaps in other fonts and code lines can lose their alignment.
 - `deck-source/` holds the source files of the online slides. Do not edit them by hand; ask Claude to change a slide and it will update the online deck too.
 - `tools/make_notes.py` rebuilds a week's `teacher-notes.md` from the slides: `python tools/make_notes.py 1`
+- `tools/build_pptx.py` builds a week's PowerPoint copy from `deck-source/` when Share › Export is not available (it needs Chrome or Edge): `python tools/build_pptx.py 1`. The Week 1 copy was made this way.
